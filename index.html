@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Web App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Landing Page -->
+    <section id="landing-page">
+      <nav>
+        <header class="container section-title">
+          <h1>WELCOME TO THE QUIZ</h1>
+        </header>
+      </nav>
+      <br />
+      <center>
+        <h2>SELECT A UNIT TO START TESTING YOUR KNOWLEDGE!!</h2>
+      </center>
+      <br />
+      <div class="unit-selection">
+        <div
+          style="width: 200px; height: 140px; margin: 35px"
+          id="unit1"
+          class="unit-option"
+        >
+          Unit-1: Introduction to DBMS & ER diagrams
+        </div>
+        <div
+          style="width: 200px; height: 140px; margin: 35px"
+          id="unit2"
+          class="unit-option"
+        >
+          Unit-2: SQL Topics
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <center>
+      <section id="quiz-page" class="quiz-section" style="display: none">
+        <h2>Quiz: <span id="quiz-title">DBMS Quiz</span></h2>
+        <div id="quiz-container" class="quiz-container">
+          <div id="question" class="question">Question will appear here</div>
+          <div id="options" class="options"></div>
+          <br />
+
+          <div id="feedback" class="feedback"></div>
+          <div class="navigation-buttons">
+            <button id="prevBtn" class="nav-btn" disabled>Previous</button>
+            <button id="nextBtn" class="nav-btn" disabled>Next</button>
+          </div>
+        </div>
+        <div id="score-container" class="score-container" style="display: none">
+          <div class="score-card">
+            <h3>Your Score</h3>
+            <p id="final-score">0 / 10</p>
+            <button id="retakeQuizBtn" class="retake-btn">Retake Quiz</button>
+          </div>
+        </div>
+      </section>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>
